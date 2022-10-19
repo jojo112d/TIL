@@ -10,7 +10,7 @@
  */
  package day07;
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 class MyStudent{
 	private int num;
 	private String name;
@@ -20,6 +20,8 @@ class MyStudent{
 	private double ave;
 	public MyStudent() {}
 	public void input() {
+		
+		
 		Scanner scan=new Scanner(System.in);
 		System.out.println("학생번호");
 		num=scan.nextInt();
@@ -32,6 +34,7 @@ class MyStudent{
 		tot=kor+math;
 		ave=tot/1.0;
 	}
+	
 	public char getGrade() { //이 부분은 몰랐던부분
 		if(ave>=90) {
 			return 'A';
@@ -43,6 +46,7 @@ class MyStudent{
 			return 'F';
 		}
 	}
+	
 	public void printData() {
 		System.out.println("학생번호:" + num);
 		System.out.println("이름:" + name);
@@ -53,6 +57,7 @@ class MyStudent{
 		System.out.println("학점:" + getGrade());
 	}
 }
+
 public class Test03_Quiz {
 	public static void main(String[] args) {
 		MyStudent[] ms=new MyStudent[3];
